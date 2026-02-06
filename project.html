@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Wambu Portfolio</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sam Wambu - Full-stack developer specializing in web and mobile development, creating exceptional digital experiences through clean code and intuitive design.">
+    <meta name="keywords" content="web development, mobile apps, full-stack developer, PHP, React Native, MySQL, UI/UX design">
+    <meta name="author" content="Martin Wainaina">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sam Wambu Full-stack Developer Portfolio">
+    <meta property="og:description" content="Professional full-stack developer specializing in web and mobile development.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://sontechsolutions.github.io/">
+
+ <!-- Favicons -->
+  <link href="assets/images/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="shortcut icon" href="assets/images/logo copy.png.png" type="image/x-icon">
+    <!-- Scripts -->
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <nav class="bg-white/80 backdrop-blur-md fixed w-full z-10 border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="w-35 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl mr-3">
+                        Sam Wambu
+                    </div>
+                    <span class="text-2xl font-bold gradient-text">Portfolio</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Home</a>
+                    <a href="index.html#about" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">About</a>
+                    <a href="index.html#skills" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Skills</a>
+                    <a href="project.html" class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Projects</a>
+                    <a href="index.html#contact" class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all">Let's
+                        Talk</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" id="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-16 6h16" />
+                        </svg>
+                        <svg class="h-6 w-6 hidden" id="close-icon" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden transition-all duration-300 opacity-0 -translate-y-2 pointer-events-none absolute left-0 right-0 top-[80px] bg-white">
+                <div class="px-4 py-3 border-t border-gray-100">
+                    <div class="flex flex-col space-y-2">
+                        <a href="index.html#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Home</a>
+                        <a href="index.html#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">About</a>
+                        <a href="index.html#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Skills</a>
+                        <a href="project.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50">Projects</a>
+                        <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:from-blue-600 hover:to-indigo-700">Let's
+                            Talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Projects Section with Filters -->
+<section id="projects" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+
+    <!-- Decorative Background -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-20"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full blur-3xl opacity-20"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900">Featured Projects</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+            <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+                Exploring innovative solutions through technology
+            </p>
+        </div>
+
+        <!-- Filters -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="px-6 py-2 rounded-full bg-blue-600 text-white font-medium active" data-filter="all">All Projects</button>
+            <button class="px-6 py-2 rounded-full bg-white border text-gray-700" data-filter="brand">Graphics Design</button>
+            <button class="px-6 py-2 rounded-full bg-white border text-gray-700" data-filter="web">Web Design</button>
+            <button class="px-6 py-2 rounded-full bg-white border text-gray-700" data-filter="mobile">Mobile Apps</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Green Tech -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/valux.png" alt="Green Tech Solutions"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70"></div>
+                    <div class="absolute bottom-0 p-6 text-white translate-y-full group-hover:translate-y-0 transition-transform">
+                        <p class="text-sm">Valuxe Website</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Valuxe Website</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://sontechsolutions.github.io/jimtech/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+                         <!-- Shaqs Farm (FIXED IMAGE TAG) -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/pip.png" alt="Shaqs Farm Website"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Pipdot Fx Website</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://pipdotfx.com/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+
+
+            <!-- Nolimit Creatives -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/pham.png" alt="Syrona Medical Center"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70"></div>
+                    <div class="absolute bottom-0 p-6 text-white translate-y-full group-hover:translate-y-0 transition-transform">
+                        <p class="text-sm">Syrona Medical Center</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Syrona Medical Center</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://syronamedicalcenter.co.ke/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+           <!-- Nolimit Creatives -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/w1.jpg" alt="Nolimit Creatives"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70"></div>
+                    <div class="absolute bottom-0 p-6 text-white translate-y-full group-hover:translate-y-0 transition-transform">
+                        <p class="text-sm">Responsive portfolio business website</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Nolimit Creatives Website</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://sontechsolutions.github.io/Nolimitcreatives/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+
+            <!-- M-Pesa SDK -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="mobile">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/mpesa-sdk.jpg" alt="M-Pesa PHP SDK"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">M-Pesa PHP SDK</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">Composer</span>
+                    </div>
+                    <a href="https://github.com/codexoft-ke/mpesa-sdk" target="_blank" class="text-blue-600 font-medium">View Source</a>
+                </div>
+            </div>
+             
+            <!-- Posters -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="brand">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/n2.jpg" alt="Posters Design"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Posters / Fliers Design</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">Adobe Photoshop</span>
+                        <span class="tag">Adobe Illustrator</span>
+                    </div>
+                   <a href="#contact" target="_blank" class="text-blue-600 font-medium">Get Details</a>                </div>
+            </div>
+            <!-- M-Pesa SDK -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="mobile">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/Property.png" alt="M-Pesa PHP SDK"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Property Application</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">Next.js</span>
+                    </div>
+                    <a href="https://github.com/codexoft-ke/mpesa-sdk" target="_blank" class="text-blue-600 font-medium">View Source</a>
+                </div>
+            </div>
+            <!-- Posters -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="brand">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/no.jpeg" alt="Posters Design"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Printing/Branding</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">Adobe Photoshop</span>
+                        <span class="tag">Adobe Illustrator</span>
+                    </div>
+                    <a href="#contact" target="_blank" class="text-blue-600 font-medium">Get Details</a>
+                </div>
+            </div>
+            <!-- Shaqs Farm (FIXED IMAGE TAG) -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/farm.png" alt="Shaqs Farm Website"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Shaqs Farm Website</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://shaqsfarm.com/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+            <!-- Posters -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="brand">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/vegez.jpeg" alt="Posters Design"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Social Media Post</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">Adobe Photoshop</span>
+                        <span class="tag">Adobe Illustrator</span>
+                    </div>
+                    <a href="#contact" target="_blank" class="text-blue-600 font-medium">Get Details</a>
+                </div>
+            </div>
+            <!-- Grean tech-->
+             <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/project1.png" alt="Green Tech Solutions"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70"></div>
+                    <div class="absolute bottom-0 p-6 text-white translate-y-full group-hover:translate-y-0 transition-transform">
+                        <p class="text-sm">Green Energy Website</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Green Tech Solutions</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://sontechsolutions.github.io/jimtech/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+
+
+            <!-- Shaqs Farm (FIXED IMAGE TAG) -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/dyor.png" alt="Do your Rearch Website"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Do your Own Rearch Website</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://doyourownresear.ch/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+
+<!-- Megapipes -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/big.png" alt="Megapipes Website"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Bigfoot-adventures Website</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="http://bigfoot-adventures.com/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+            <!-- Megapipes -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/pipes.png" alt="Megapipes Website"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Megapipes Website</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <a href="https://megapipes.com/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+            <!-- Megapipes -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="mobile">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/Task Management Dashboard.jpeg" alt="Megapipes Website"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Task Manager Application</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">Rest Api</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React Native</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                    <a href="" target="_blank" class="text-blue-600 font-medium">Application</a>
+                </div>
+            </div>
+            
+            <!-- Megapipes -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/gown.png" alt="Gownsea Website"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Gownsea Website</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">Rest Api</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">Tailwind CSS</span>
+                    </div>
+                    <a href="http://gownsea.com/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+            <!-- Megapipes -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/construction.png" alt="Jowach Construction Website"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Jowach Construction Website</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">Rest Api</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">Tailwind CSS</span>
+                    </div>
+                    <a href="http://jowachconstruction.co.ke/" target="_blank" class="text-blue-600 font-medium">Website</a>
+                </div>
+            </div>
+            
+            <!-- Megapipes -->
+            <div class="group bg-white rounded-xl shadow-lg overflow-hidden" data-category="web">
+                <div class="relative overflow-hidden">
+                    <img src="assets/images/projects/travel.png" alt="Gownsea Website"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Travel Website</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">Rest Api</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">Tailwind CSS</span>
+                    </div>
+                    <a href="" target="_blank" class="text-blue-600 font-medium">Website>
+                </div>
+            </div>
+            
+
+     
+</section>
+
+    <!-- Testimonials Sections -->
+    <section id="testimonials" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+
+        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900">Client Success Stories</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mt-4"></div>
+                <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">Discover how we've helped businesses transform their digital presence and achieve remarkable results.</p>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper testimonials-slider">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl p-8">
+                            <div class="relative mb-8">
+                                <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center">
+                                    <i data-feather="message-circle" class="w-6 h-6 text-white"></i>
+                                </div>
+                                <img src="assets/images/clients/avatar-1.jpg" alt="Sarah Johnson" class="w-16 h-16 rounded-full ml-8">
+                            </div>
+                            <blockquote class="text-gray-600 mb-6">
+                                "The innovative solutions and attention to detail transformed our digital presence. The results exceeded our expectations and delivered real business value."
+                            </blockquote>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Geofian Njogu</h4>
+                                    <p class="text-blue-600">CEO, No Limit creatives</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl p-8">
+                            <div class="relative mb-8">
+                                <div class="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center">
+                                    <i data-feather="message-circle" class="w-6 h-6 text-white"></i>
+                                </div>
+                                <img src="assets/images/clients/avatar-2.jpg" alt="Michael Chen" class="w-16 h-16 rounded-full ml-8">
+                            </div>
+                            <blockquote class="text-gray-600 mb-6">
+                                "The development team's expertise in healthcare technology helped us create a secure, scalable platform that revolutionized our patient care system."
+                            </blockquote>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Dr.Sarah</h4>
+                                    <p class="text-blue-600">CTO, Mt.Kenya Hospital</p>
+                                </div>
+                                <div class="flex text-yellow-400">
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+
+        <div class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900">Let's Create Something Together</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+                <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+                    Have a project in mind? Let's discuss how we can bring your ideas to life.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-feather="map-pin" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">Location</h3>
+                                <p class="text-gray-600">Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-feather="mail" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">Email</h3>
+                                <a href="sammywambu3@gmail.com" class="text-blue-600 hover:text-blue-800">
+                                    <span class="sammywambu3@gmail.com" data-cfemail="">sammywambu3@gmail.com</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-feather="phone" class="w-6 h-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900">Phone</h3>
+                                <a href="tel:+254795375735" class="text-blue-600 hover:text-blue-800">
+                                    +(254) 741 922 800
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                       <!-- Social Links -->
+                    <div class="flex space-x-4 mt-8">
+                        <a href="https://github.com/Codewam" target="_blank" class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors">
+                            <i data-feather="github" class="w-6 h-6 text-gray-600"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/wambu-sam-a494a524b/" target="_blank" class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors">
+                            <i data-feather="linkedin" class="w-6 h-6 text-gray-600"></i>
+                        </a>
+                        <a href="https://x.com/codexoft_ke" target="_blank" class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors">
+                            <i data-feather="twitter" class="w-6 h-6 text-gray-600"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61576684235752" target="_blank" class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors">
+                            <i data-feather="facebook" class="w-6 h-6 text-gray-600"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="Your name" name="name" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="your@email.com" name="email" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="Project discussion" name="subject" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="6" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none" placeholder="Tell me about your project..." name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" id="submitting-button" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 px-6 rounded-lg hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transform hover:-translate-y-0.5 transition-all duration-150">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <!-- Main Footer Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Brand Column -->
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-35 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl">
+                            Tech-hub
+                        </div>
+                        <span class="text-2xl font-bold text-white">Solutions
+                    </div>
+                    <p class="text-gray-400">
+                        Crafting digital experiences through innovative development and thoughtful design.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Codewam" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-feather="github" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/wambu-sam-a494a524b/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://x.com/tech Hub target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61576684235752" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Graphics Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Mobile Development</a> </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">UI/UX Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">TechnicalConsultation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Code Review</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pentesting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Stay Updated</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to my newsletter for the latest updates on projects and tech insights.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="relative">
+                            <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 bg-gray-800 rounded-lg text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 px-4 rounded-lg hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="md:flex md:items-center md:justify-between text-gray-400 text-sm">
+                    <div class="text-center md:text-left">
+                        <p>&copy; 2026 Tech-Hub Solutions @copyright. All rights reserved.</p>
+                    </div>
+                    <div class="mt-4 md:mt-0 text-center md:text-right">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <span class="mx-3">|</span>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- Cloudflare Pages Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a31a850541d24dfeb682f07973e468f4"}'></script>
+    <!-- Cloudflare Pages Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"940c2e462f177401","version":"2025.4.0-1-g37f21b1","r":1,"token":"5c6364d9afee4ebd9bff5114f45d5084","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
